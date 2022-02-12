@@ -285,7 +285,7 @@ class ngentod:
         elif suuu in ('2', '02'):
             print '\n%s [%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+            print '%s [%s!%s] setiap crack 500 ID, gunakan mode pesawat 3 detik\n'%(P,M,P);jeda(0.2)
             with ThreadPoolExecutor(max_workers=30) as log:
             	for akun in self.id: 
                     try:
@@ -301,7 +301,7 @@ class ngentod:
         elif suuu in ('3', '03'):
             print '\n %s[%s*%s] akun %sOK%s tersimpan di >%s hasil/OK-%s-%s-%s.txt'%(P,K,P,H,P,H,ha, op, ta);jeda(0.2)
             print '%s [%s*%s] akun %sCP %stersimpan di > %shasil/CP-%s-%s-%s.txt'%(P,K,P,K,P,K,ha, op, ta);jeda(0.2)
-            print '%s [%s!%s] setiap crack 1k ID, gunakan mode pesawat 2 detik\n'%(P,M,P);jeda(0.2)
+            print '%s [%s!%s] setiap crack 500 ID, gunakan mode pesawat 3 detik\n'%(P,M,P);jeda(0.2)
             with ThreadPoolExecutor(max_workers=30) as log:
             	for akun in self.id: 
                     try:
