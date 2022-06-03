@@ -150,14 +150,14 @@ def banner():
 	ban='''
     _____ __  _______   _________  __ 
    / ___// / / /  _/ | / /__  /\ \/ / 
-   \__ \/ /_/ // //  |/ /  / /  \  /
+  \__ \/ /_/ // //  |/ /  / /  \  /
   ___/ / __  // // /|  /  / /__ / /
- /____/_/ /_/___/_/ |_/  /____//_/
-                     ____  _    __              __
+/____/_/ /_/___/_/ |_/  /____//_/
+                   ____  _    __              __
     ____ ___  __  __/ / /_(_)  / /_____  ____  / /____
    / __ `__ \/ / / / / __/ /  / __/ __ \/ __ \/ / ___/
   / / / / / / /_/ / / /_/ /  / /_/ /_/ / /_/ / (__  )
- /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/ '''
+/_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/ '''
 	oi = nel(tekz(ban,justify='center',style='bold'), style='cyan')
 	cetak(nel(oi, title='[bold cyan] • DEVELOVER INFORMATION • [/bold cyan]'))
 # VALIDASI TOKEN
@@ -990,8 +990,8 @@ def crack(idf,pwv,nmf):
 					except:
 						statuscp = f'\r[•] ID       : {idf} \n[•] PASSWORD : {pw} \n[•] NAME : {nmf}'
 						open('/sdcard/4MBF-DATA/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='AOREC-XD CP'))
+					statuscp1 = nel(statuscp, style='yellow')
+					cetak(nel(statuscp1, title='SHINZY CP'))
 					cp+=1
 				else:continue
 				break
@@ -1004,7 +1004,7 @@ def crack(idf,pwv,nmf):
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='AOREC-XD OK'))
+					cetak(nel(statusok1, title='SHINZY LIVE'))
 					ok+=1
 					break
 				elif 'ya' in taplikasi:
@@ -1062,7 +1062,7 @@ def crack(idf,pwv,nmf):
 					print('\n')
 					statusok = f'[bold green]\r[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}[/bold green]\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='[bold green]AOREC XD OK[/bold green]'))
+					cetak(nel(statusok1, title='[bold green]SHINZY LIVE[/bold green]'))
 					ok+=1
 					break
 
@@ -1101,8 +1101,8 @@ def crackfree(idf,pwv):
 				elif 'ya' in princp:
 					print('\n')
 					statuscp = f'[•] ID       : {idf} [•] PASSWORD : {pw}'
-					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='AOREC-XD CP'))
+					statuscp1 = nel(statuscp, style='yellow')
+					cetak(nel(statuscp1, title='SHINZY CP'))
 					open('/sdcard/4MBF-DATA/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
@@ -1117,7 +1117,7 @@ def crackfree(idf,pwv):
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='AOREC-XD OK'))
+					cetak(nel(statusok1, title='SHINZY LIVE'))
 					ok+=1
 					break
 				elif 'ya' in taplikasi:
@@ -1146,7 +1146,7 @@ def crackfree(idf,pwv):
 					print('\n')
 					statusok = f'[bold green][•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}[/bold green]\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='[bold green]AOREC-XD OK[/bold green]'))
+					cetak(nel(statusok1, title='[bold green]SHINZY LIVE[/bold green]'))
 					ok+=1
 					break
 
@@ -1185,8 +1185,8 @@ def cracktouch(idf,pwv):
 				elif 'ya' in princp:
 					print('\n')
 					statuscp = f'[•] ID       : {idf} [•] PASSWORD : {pw}'
-					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='AOREC-XD CP'))
+					statuscp1 = nel(statuscp, style='yellow')
+					cetak(nel(statuscp1, title='SHINZY CP'))
 					open('/sdcard/4MBF-DATA/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
@@ -1201,7 +1201,7 @@ def cracktouch(idf,pwv):
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='AOREC-XD OK'))
+					cetak(nel(statusok1, title='SHINZY LIVE'))
 					ok+=1
 					break
 				elif 'ya' in taplikasi:
@@ -1230,7 +1230,7 @@ def cracktouch(idf,pwv):
 					print('\n')
 					statusok = f'[bold green][•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}[/bold green]\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title='[bold green]AOREC-XD OK[/bold green]'))
+					cetak(nel(statusok1, title='[bold green]SHINZY LIVE[/bold green]'))
 					ok+=1
 					break
 
@@ -1268,8 +1268,8 @@ def crackmbasic(idf,pwv):
 				elif 'ya' in princp:
 					print('\n')
 					statuscp = f'[•] ID       : {idf} [•] PASSWORD : {pw}'
-					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='AOREC-XD CP'))
+					statuscp1 = nel(statuscp, style='yellow')
+					cetak(nel(statuscp1, title='SHINZY CP'))
 					open('/sdcard/4MBF-DATA/CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
