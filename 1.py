@@ -143,7 +143,7 @@ def back():
 def banner():
 	clear()
 	wel='# WELCOME TO FACEBOOK CRACK TOOL'
-	cik2=mark(wel ,style='cyan')
+	cik2=mark(wel ,style='orange')
 	sol().print(cik2)
 
 
