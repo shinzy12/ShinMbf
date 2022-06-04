@@ -951,7 +951,7 @@ def crack(idf,pwv,nmf):
 	pers = loop*100/len(id2)
 	fff = '%'
 	ua = random.choice(ugen)
-#	ua='Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36'
+#	ua='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.1.2222.33 Safari/537.36'
 	ua2 = random.choice(ugen2)
 	nip=random.choice(prox)
 	ses=requests.Session()
