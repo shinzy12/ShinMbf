@@ -1045,11 +1045,11 @@ def crack(idf,pwv,nmf):
 
 					cek2 = session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies=coki,headers=headapp).text
 					cek =session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies=coki,headers=headapp).text
-					infoakun += (f"\n[bold cyan][•] LIST ACTIVE APPLICATIONS :[/bold green] \n")
+					infoakun += (f"\n[bold cyan][•] LIST ACTIVE APPLICATIONS :[/bold cyan] \n")
 					apkaktif=re.findall('</i><div class=".*?"><span class=".*?">(.*?)</span><div></div><div class=".*?">(.*?)</div></div>',str(cek))
 					nok=1
 					for muncul in apkaktif:
-						infoakun+= (f"[bold cyan][{nok}] {muncul[0]} {muncul[1]}[/bold red]\n")
+						infoakun+= (f"[bold cyan][{nok}] {muncul[0]} {muncul[1]}[/bold cyan]\n")
 						nok+=1
 
 					hit=0
