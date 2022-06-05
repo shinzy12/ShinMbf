@@ -887,7 +887,7 @@ def setting():
 	pwplus=input(x+'['+p+'f'+x+'] Choose : ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		krek = '[•] USE COMMA AS SEPARATE\n[•] USE LOWER LETTERS\n[•] EXAMPLE: indonesia,germany,bangladesh'
+		krek = '[•] USE COMMA AS SEPARATE\n[•] USE LOWER LETTERS\n[•] EXAMPLE: Shinganteng,shintampan,pakdeqirom'
 		cetak(nel(krek, title=' • ADDITIONAL PASSWORD • '))
 		pwku=input('ENTER ADDITIONAL PASSWORD : ')
 		pwkuh=pwku.split(',')
@@ -901,7 +901,7 @@ def setting():
 def passwrd():
 	ler = '# CRACK PROCESS START, PRESS CTRL+Z TO STOP'
 	sol().print(mark(ler, style='green'))
-	krek = '[•] OK RESULTS SAVED IN : INTERNAL MEMORY/4MBF-DATA/OK/%s\n[•] CP RESULTS SAVED IN : INTERNAL MEMORY/4MBF-DATA/CP/%s\nON OF AIRPLANE MODE EVERY 500 ID'%(okc,cpc)
+	krek = '[•] OK RESULTS SAVED IN : INTERNAL MEMORY/4MBF-DATA/OK/%s\n[•] CP RESULTS SAVED IN : INTERNAL MEMORY/4MBF-DATA/CP/%s\nMODE PESAWAT 5 DETIK JIKA TIDAK ADA RESULT, DAN JIKA IP MASIH TERKENA SPAM USAHAKAN AKTIFKAN VPN 5 MENIT UNTUK MEMULIHKAN IP KALIAN'%(okc,cpc)
 	cetak(nel(krek, title=' • CRACK • '))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
