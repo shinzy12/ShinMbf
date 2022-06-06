@@ -313,7 +313,7 @@ def menu(my_name,my_id):
 [04] LIKES THE POST	     [09] TIPS CRACK
 [05] GROUP MEMBERS           [00] LOGOUT[bold cyan]'''
 	oi = nel(io, style='cyan')
-	cetak(nel(oi, title='[bold cyan] • MENU CRACK • [/bold cyan]'))
+	cetak(nel(oi, title='[bold cyan] • MENU CRACK • [/bold red]'))
 	ec = input(x+'['+p+'<>'+x+'] Pilih : ')
 	if ec in ['1','01']:
 		dump_publik()
